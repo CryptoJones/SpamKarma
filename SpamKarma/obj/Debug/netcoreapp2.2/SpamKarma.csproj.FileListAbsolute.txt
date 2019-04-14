@@ -1,0 +1,11 @@
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.deps.json
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.runtimeconfig.json
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.runtimeconfig.dev.json
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.dll
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.pdb
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.csprojAssemblyReference.cache
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.csproj.CoreCompileInputs.cache
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.AssemblyInfoInputs.cache
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.AssemblyInfo.cs
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.dll
+C:\Users\Aaron K. Clark\source\repos\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.pdb

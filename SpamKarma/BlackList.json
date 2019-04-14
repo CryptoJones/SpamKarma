@@ -1,0 +1,31 @@
+{
+  "naggerAddresses": [
+    {
+      "user": "cryptojones",
+      "domain": "gmail.com",
+      "retributionLevel": 1
+    },
+    {
+      "user": "aaronkclark",
+      "domain": "yahoo.com",
+      "retributionLevel": 5
+    },
+    {
+      "user": "akclark",
+      "domain": "hotmail.com",
+      "retributionLevel": 0
+    }
+  ],
+    "naggerDomains": [
+      {
+        "domain": "hotmail",
+        "tld": "com",
+        "retributionLevel": 1
+      },
+      {
+        "domain": "google",
+        "tld": "com",
+        "retributionLevel": 0
+      }
+    ]
+}

@@ -3,29 +3,39 @@
     {
       "user": "cryptojones",
       "domain": "gmail.com",
-      "retributionLevel": 1
+      "retributionLevel": 0
+    },
+    {
+      "user": "aaron.kingsley.clark",
+      "domain": "gmail.com",
+      "retributionLevel": 0
     },
     {
       "user": "aaronkclark",
       "domain": "yahoo.com",
-      "retributionLevel": 5
+      "retributionLevel": 0
     },
     {
-      "user": "akclark",
-      "domain": "hotmail.com",
+      "user": "no-reply@",
+      "domain": "accounts.google.com",
+      "retributionLevel": 0
+    },
+    {
+      "user": "mail-noreply",
+      "domain": "google.com",
       "retributionLevel": 0
     }
   ],
     "naggerDomains": [
       {
-        "domain": "hotmail",
+        "domain": "amigainformatics",
         "tld": "com",
-        "retributionLevel": 1
+        "retributionLevel": 5
       },
       {
-        "domain": "google",
+        "domain": "idctechnologies",
         "tld": "com",
-        "retributionLevel": 0
+        "retributionLevel": 5
       }
     ]
 }

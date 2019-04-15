@@ -7,6 +7,8 @@ using Newtonsoft.Json;
 using System.Linq;
 using System.Collections.Generic;
 using MimeKit;
+using MailKit;
+using MailKit.Search;
 
 namespace SpamKarma
 {
@@ -43,35 +45,57 @@ namespace SpamKarma
 
         static void CheckMail(BlackList bl, Victim vm)
         {
-            using (var emailClient = new MailKit.Net.Pop3.Pop3Client())
+            using (var emailClient = new MailKit.Net.Imap.ImapClient())
             {
-                emailClient.Connect("pop.gmail.com", 995, true);
+                emailClient.Connect("imap.gmail.com", 993, true);
                 emailClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 emailClient.Authenticate(vm.Address, vm.Password);
-                List<EmailMessage> emails = new List<EmailMessage>();
-                for (int i = 0; i < emailClient.Count && i < 50; i++)
-                {
-                    var message = emailClient.GetMessage(i);
-                    var emailMessage = new EmailMessage
-                    {
-                        Content = !string.IsNullOrEmpty(message.HtmlBody) ? message.HtmlBody : message.TextBody,
-                        Subject = message.Subject
-                    };
-                    emailMessage.ToAddresses.AddRange(message.To.Select(x => (MailboxAddress)x).Select(x => new EmailAddress { Address = x.Address, Name = x.Name }));
-                    emailMessage.FromAddresses.AddRange(message.From.Select(x => (MailboxAddress)x).Select(x => new EmailAddress { Address = x.Address, Name = x.Name }));
+                emailClient.Inbox.Open(FolderAccess.ReadWrite);
+                emailClient.Inbox.FirstOrDefault();
+                //int numberOfEmails = emailClient.Inbox.Count();
+                var uids = emailClient.Inbox.Search(SearchQuery.All);
 
-                    foreach (NaggerAddress item in bl.NaggerAddresses)
+                foreach (var uid in uids)
+                {
+                    MimeMessage message = emailClient.Inbox.GetMessage(uid);
+
+
+
+
+                    foreach (NaggerAddress na in bl.NaggerAddresses)
                     {
-                        string email = item.User + "@" + item.Domain;
-                       if (email == emailMessage.FromAddresses.ToString())
+                        bool returnFire = false;
+
+                        if (message.From.ToString().Contains(na.User + "@" + na.Domain))
                         {
-                            RespondWithPicture(1, "", vm);
-                            DeleteMessage(message.MessageId, vm);
+                            returnFire = true;
+                        }
+
+                        if (returnFire)
+                        {
+                            RespondWithPicture(na.RetributionLevel, message.From.ToString(), vm);
+                            DeleteMessage(uid, vm);
+                        }
+                    }
+
+                    foreach (NaggerDomain nd in bl.NaggerDomains)
+                    {
+                        bool returnFire = false;
+
+                        if (message.From.ToString().Contains(nd.Domain))
+                        {
+                            returnFire = true;
+                        }
+
+                        if (returnFire)
+                        {
+                            RespondWithPicture(nd.RetributionLevel, message.From.ToString(), vm);
+                            DeleteMessage(uid, vm);
                         }
                     }
                 }
-                
             }
+                         
         }
 
         static void RespondWithPicture(int count, string naggerAddress, Victim victim)
@@ -113,14 +137,18 @@ namespace SpamKarma
 
         }
 
-        static void DeleteMessage(string messageId, Victim vm)
+        static void DeleteMessage(UniqueId messageId, Victim vm)
         {
-            using (var emailClient = new MailKit.Net.Pop3.Pop3Client())
+            using (var emailClient = new MailKit.Net.Imap.ImapClient())
             {
-                emailClient.Connect("pop.gmail.com", 995, true);
+                emailClient.Connect("imap.gmail.com", 993, true);
                 emailClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 emailClient.Authenticate(vm.Address, vm.Password);
-                emailClient.DeleteMessage(0);
+                emailClient.Inbox.Open(FolderAccess.ReadWrite);
+                emailClient.Inbox.AddFlags(new UniqueId[] { messageId }, MessageFlags.Deleted, true);
+                emailClient.Inbox.Expunge();
+                
+                
             }
         }
 
@@ -128,8 +156,8 @@ namespace SpamKarma
     }
 
     public class BlackList {
-        public ArrayList NaggerAddresses = new ArrayList();
-        public ArrayList NaggerDomains = new ArrayList();
+        public List<NaggerAddress> NaggerAddresses = new List<NaggerAddress>();
+        public List<NaggerDomain> NaggerDomains = new List<NaggerDomain>();
 
        public BlackList()
         {
@@ -170,5 +198,6 @@ namespace SpamKarma
         public List<EmailAddress> FromAddresses { get; set; }
         public string Subject { get; set; }
         public string Content { get; set; }
+        public bool Unread { get; set; }
     }
 }

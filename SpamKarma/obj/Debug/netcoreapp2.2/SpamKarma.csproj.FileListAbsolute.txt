@@ -26,3 +26,31 @@ C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\PayloadIm
 C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\8.jpg
 C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\9.jpg
 C:\Users\Aaron K. Clark\source\repos\SpamKarma\bin\Debug\netcoreapp2.2\BlackList.json
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\0.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\1.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\10.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\11.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\12.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\13.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\14.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\15.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\2.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\3.JPG
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\4.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\5.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\6.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\7.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\8.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\PayloadImages\9.jpg
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\BlackList.json
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.deps.json
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.runtimeconfig.json
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.runtimeconfig.dev.json
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.dll
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\bin\Debug\netcoreapp2.2\SpamKarma.pdb
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.csprojAssemblyReference.cache
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.csproj.CoreCompileInputs.cache
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.AssemblyInfoInputs.cache
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.AssemblyInfo.cs
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.dll
+C:\Users\akclark\RiderProjects\SpamKarma\SpamKarma\obj\Debug\netcoreapp2.2\SpamKarma.pdb

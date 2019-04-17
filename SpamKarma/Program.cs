@@ -116,7 +116,7 @@ namespace SpamKarma
                 emailClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 emailClient.Authenticate(vm.Address, vm.Password);
                 emailClient.Inbox.Open(FolderAccess.ReadWrite);
-                emailClient.Inbox.AddFlags(new[] { messageId }, MessageFlags.Answered, true);
+                emailClient.Inbox.AddFlags(new[] { messageId }, MessageFlags.Seen, true);
                 emailClient.Inbox.AddFlags(new[] {messageId}, MessageFlags.Deleted, true);
                 emailClient.Inbox.Expunge();
             }

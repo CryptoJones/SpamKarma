@@ -4,26 +4,6 @@
       "user": "cryptojones",
       "domain": "gmail.com",
       "retributionLevel": 1
-    },
-    {
-      "user": "aaron.kingsley.clark",
-      "domain": "gmail.com",
-      "retributionLevel": 0
-    },
-    {
-      "user": "aaronkclark",
-      "domain": "yahoo.com",
-      "retributionLevel": 0
-    },
-    {
-      "user": "no-reply@",
-      "domain": "accounts.google.com",
-      "retributionLevel": 0
-    },
-    {
-      "user": "mail-noreply",
-      "domain": "google.com",
-      "retributionLevel": 0
     }
   ],
   "naggerDomains": [

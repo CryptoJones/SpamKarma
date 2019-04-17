@@ -24,10 +24,9 @@ namespace SpamKarma
             var vm = new Victim();
             BlackList bl;
 
-            var json = string.Empty;
             try
             {
-                json = File.ReadAllText("BlackList.json");
+                string json = File.ReadAllText("BlackList.json");
                 bl = JsonConvert.DeserializeObject<BlackList>(json);
                 CheckMail(bl, vm);
             }
@@ -46,7 +45,7 @@ namespace SpamKarma
                 emailClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 emailClient.Authenticate(vm.Address, vm.Password);
                 emailClient.Inbox.Open(FolderAccess.ReadWrite);
-                //int numberOfEmails = emailClient.Inbox.Count();
+
                 var uids = emailClient.Inbox.Search(SearchQuery.All);
 
                 foreach (var uid in uids)

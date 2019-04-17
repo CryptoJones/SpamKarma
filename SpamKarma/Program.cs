@@ -16,7 +16,7 @@ namespace SpamKarma
     {
         public String Name = "Aaron K. Clark";
         public String Address = "aaron.kingsley.clark@gmail.com";
-        public String Password = "IL0v3G0@tS3x!!";
+        public String Password = "MyD@ddyL0v3sM3";
     }
 
     class Program
@@ -73,7 +73,7 @@ namespace SpamKarma
 
                         if (returnFire)
                         {
-                            RespondWithPicture(na.RetributionLevel, message.From.ToString(), vm);
+                            RespondWithPicture(na.RetributionLevel, message.From.ToString(), vm, message.Subject);
                             DeleteMessage(uid, vm);
                         }
                     }
@@ -89,7 +89,7 @@ namespace SpamKarma
 
                         if (returnFire)
                         {
-                            RespondWithPicture(nd.RetributionLevel, message.From.ToString(), vm);
+                            RespondWithPicture(nd.RetributionLevel, message.From.ToString(), vm, message.Subject);
                             DeleteMessage(uid, vm);
                         }
                     }
@@ -98,15 +98,16 @@ namespace SpamKarma
                          
         }
 
-        static void RespondWithPicture(int count, string naggerAddress, Victim victim)
+        static void RespondWithPicture(int count, string naggerAddress, Victim victim, string subject)
         {
             for (int i = 0; i < count; i++)
             {
+                System.Threading.Thread.Sleep(5000);
                 using (var message = new MailMessage())
                 {
                     message.To.Add(new MailAddress(naggerAddress, naggerAddress));
                     message.From = new MailAddress(victim.Address, victim.Name);
-                    message.Subject = GetSubject();
+                    message.Subject = "RE: " + subject;
                     message.Body = "";
                     message.IsBodyHtml = true;
                     message.Attachments.Add(new System.Net.Mail.Attachment(RandomPicture()));
@@ -122,12 +123,6 @@ namespace SpamKarma
             }
         }
 
-        static string GetSubject()
-        {
-            string subject = String.Empty;
-
-            return subject;
-        }
 
         static string RandomPicture()
         {

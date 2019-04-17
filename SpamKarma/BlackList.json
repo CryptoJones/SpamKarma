@@ -3,7 +3,7 @@
     {
       "user": "cryptojones",
       "domain": "gmail.com",
-      "retributionLevel": 0
+      "retributionLevel": 1
     },
     {
       "user": "aaron.kingsley.clark",
@@ -26,16 +26,67 @@
       "retributionLevel": 0
     }
   ],
-    "naggerDomains": [
-      {
-        "domain": "amigainformatics",
-        "tld": "com",
-        "retributionLevel": 5
-      },
-      {
-        "domain": "idctechnologies",
-        "tld": "com",
-        "retributionLevel": 5
-      }
-    ]
+  "naggerDomains": [
+    {
+      "domain": "amigainformatics",
+      "tld": "com",
+      "retributionLevel": 10
+    },
+    {
+      "domain": "idctechnologies",
+      "tld": "com",
+      "retributionLevel": 10
+    },
+    {
+      "domain": "kennesaw",
+      "tld": "edu",
+      "retributionLevel": 0
+    },
+    {
+      "domain": "slack",
+      "tld": "com",
+      "retributionLevel": 0
+    },
+    {
+      "domain": "q1tech",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+    {
+      "domain": "htcinc",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+    {
+      "domain": "edx",
+      "tld": "org",
+      "retributionLevel": 0
+    },
+    {
+      "domain": "hanstaffing",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+    {
+      "domain": "aptask",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+    {
+      "domain": "nlbservices",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+    {
+      "domain": "google",
+      "tld": "com",
+      "retributionLevel": 0
+    },
+    {
+      "domain": "infojiniconsulting",
+      "tld": "com",
+      "retributionLevel": 5
+    }
+
+  ]
 }

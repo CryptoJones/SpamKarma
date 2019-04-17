@@ -14,7 +14,7 @@ namespace SpamKarma
     {
         public string Address = "aaron.kingsley.clark@gmail.com";
         public string Name = "Aaron K. Clark";
-        public string Password = "IL0v3G0@tS3x!!";
+        public string Password = "spamthespammers";
     }
 
     internal class Program
@@ -116,6 +116,7 @@ namespace SpamKarma
                 emailClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 emailClient.Authenticate(vm.Address, vm.Password);
                 emailClient.Inbox.Open(FolderAccess.ReadWrite);
+                emailClient.Inbox.AddFlags(new[] { messageId }, MessageFlags.Answered, true);
                 emailClient.Inbox.AddFlags(new[] {messageId}, MessageFlags.Deleted, true);
                 emailClient.Inbox.Expunge();
             }

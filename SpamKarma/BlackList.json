@@ -3,7 +3,7 @@
     {
       "user": "cryptojones",
       "domain": "gmail.com",
-      "retributionLevel": 0
+      "retributionLevel": 1
     },
     {
       "user": "aaron.kingsley.clark",
@@ -30,12 +30,12 @@
     {
       "domain": "amigainformatics",
       "tld": "com",
-      "retributionLevel": 5
+      "retributionLevel": 10
     },
     {
       "domain": "idctechnologies",
       "tld": "com",
-      "retributionLevel": 5
+      "retributionLevel": 10
     },
     {
       "domain": "kennesaw",
@@ -81,6 +81,11 @@
       "domain": "google",
       "tld": "com",
       "retributionLevel": 0
+    },
+    {
+      "domain": "infojiniconsulting",
+      "tld": "com",
+      "retributionLevel": 5
     }
 
   ]

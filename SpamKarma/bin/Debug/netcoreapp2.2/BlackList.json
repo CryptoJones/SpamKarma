@@ -26,16 +26,21 @@
       "retributionLevel": 0
     }
   ],
-    "naggerDomains": [
-      {
-        "domain": "amigainformatics",
-        "tld": "com",
-        "retributionLevel": 5
-      },
-      {
-        "domain": "idctechnologies",
-        "tld": "com",
-        "retributionLevel": 5
-      }
-    ]
+  "naggerDomains": [
+    {
+      "domain": "amigainformatics",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+    {
+      "domain": "idctechnologies",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+    {
+      "domain": "infojiniconsulting",
+      "tld": "com",
+      "retributionLevel": 5
+    }
+  ]
 }

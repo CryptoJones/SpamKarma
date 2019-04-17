@@ -60,7 +60,7 @@ namespace SpamKarma
 
                         if (returnFire)
                         {
-                            RespondWithPicture(na.RetributionLevel, message.From.ToString(), vm);
+                            RespondWithPicture(na.RetributionLevel, message.From.ToString(), vm, message.Subject);
                             DeleteMessage(uid, vm);
                         }
                     }
@@ -71,7 +71,7 @@ namespace SpamKarma
 
                         if (returnFire)
                         {
-                            RespondWithPicture(nd.RetributionLevel, message.From.ToString(), vm);
+                            RespondWithPicture(nd.RetributionLevel, message.From.ToString(), vm, message.Subject);
                             DeleteMessage(uid, vm);
                         }
                     }
@@ -79,14 +79,14 @@ namespace SpamKarma
             }
         }
 
-        private static void RespondWithPicture(int count, string naggerAddress, Victim victim)
+        private static void RespondWithPicture(int count, string naggerAddress, Victim victim, string subject)
         {
             for (var i = 0; i < count; i++)
                 using (var message = new MailMessage())
                 {
                     message.To.Add(new MailAddress(naggerAddress, naggerAddress));
                     message.From = new MailAddress(victim.Address, victim.Name);
-                    message.Subject = GetSubject();
+                    message.Subject = "RE: " + subject;
                     message.Body = "";
                     message.IsBodyHtml = true;
                     message.Attachments.Add(new Attachment(RandomPicture()));
@@ -99,13 +99,6 @@ namespace SpamKarma
                         client.Send(message);
                     }
                 }
-        }
-
-        private static string GetSubject()
-        {
-            var subject = string.Empty;
-
-            return subject;
         }
 
         private static string RandomPicture()

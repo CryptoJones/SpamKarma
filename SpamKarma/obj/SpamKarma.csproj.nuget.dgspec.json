@@ -1,34 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aaron K. Clark\\source\\repos\\SpamKarma\\SpamKarma.csproj": {}
+    "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarma\\SpamKarma.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aaron K. Clark\\source\\repos\\SpamKarma\\SpamKarma.csproj": {
+    "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarma\\SpamKarma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron K. Clark\\source\\repos\\SpamKarma\\SpamKarma.csproj",
+        "projectUniqueName": "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarma\\SpamKarma.csproj",
         "projectName": "SpamKarma",
-        "projectPath": "C:\\Users\\Aaron K. Clark\\source\\repos\\SpamKarma\\SpamKarma.csproj",
-        "packagesPath": "C:\\Users\\Aaron K. Clark\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron K. Clark\\source\\repos\\SpamKarma\\obj\\",
+        "projectPath": "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarma\\SpamKarma.csproj",
+        "packagesPath": "C:\\Users\\akclark\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarma\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aaron K. Clark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\akclark\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -39,16 +39,15 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp2.1": {
           "dependencies": {
             "MailKit": {
               "target": "Package",
               "version": "[2.1.4, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {

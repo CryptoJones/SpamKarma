@@ -14,7 +14,7 @@ namespace SpamKarma
     {
         public string Address = "aaron.kingsley.clark@gmail.com";
         public string Name = "Aaron K. Clark";
-        public string Password = "spamthespammers";
+        public string Password = "wgrxbyyroibejkig";
     }
 
     internal class Program

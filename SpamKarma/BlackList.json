@@ -208,6 +208,18 @@
       "domain": "apninc",
       "tld": "com",
       "retributionLevel": 5
+    },
+
+    {
+      "domain": "aitacs",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "genesis10",
+      "tld": "com",
+      "retributionLevel": 5
     }
   ]
 }

@@ -220,6 +220,12 @@
       "domain": "genesis10",
       "tld": "com",
       "retributionLevel": 5
+    },
+
+    {
+      "domain": "georgiait",
+      "tld": "com",
+      "retributionLevel": 5
     }
   ]
 }

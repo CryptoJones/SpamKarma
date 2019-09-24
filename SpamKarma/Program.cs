@@ -15,7 +15,7 @@ namespace SpamKarma
 
             try
             {
-                string json = File.ReadAllText("BlackList.json");
+                string json = File.ReadAllText("SpamKarmaBlackList.json");
                 bl = JsonConvert.DeserializeObject<BlackList>(json);
                 Actions.CheckMail(bl, vm);
             }

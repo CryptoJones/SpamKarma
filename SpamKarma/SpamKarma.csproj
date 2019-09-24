@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="BlackList.json" />
     <None Remove="PayloadImages\0.jpg" />
     <None Remove="PayloadImages\1.jpg" />
     <None Remove="PayloadImages\10.jpg" />
@@ -25,6 +24,7 @@
     <None Remove="PayloadImages\7.jpg" />
     <None Remove="PayloadImages\8.jpg" />
     <None Remove="PayloadImages\9.jpg" />
+    <None Remove="SpamKarmaBlackList.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -94,7 +94,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="BlackList.json">
+    <Content Include="SpamKarmaBlackList.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -104,6 +104,10 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="System.ServiceProcess.ServiceController" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpamKarmaBase\SpamKarmaBase.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,231 @@
+{
+  "naggerAddresses": [
+    {
+      "user": "cryptojones",
+      "domain": "gmail.com",
+      "retributionLevel": 0
+    }
+  ],
+  "naggerDomains": [
+    {
+      "domain": "amigainformatics",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+    {
+      "domain": "idctechnologies",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "infojiniconsulting",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "apetan",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "softpath",
+      "tld": "net",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "tryfacta",
+      "tld": "ai",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "maxeleven",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "compworldwide",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "right-resources",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "kanisol",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "nlbservices",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "compunnel",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "aptask",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "axelon",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "pyramidci",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "objectwin",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "talentburst",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "peritussoft",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "georgiait",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "ittblazers",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "matrixonweb",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "techproviders",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "mindlance",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "askstaffing",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "vlinkinfo",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "caresoftinc",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "psi-staffing",
+      "tld": "net",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "oscar-recruit",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "oscar-tech",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "compunnel",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "cambayllc",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "cambaycs",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "first-tek",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "apninc",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "aitacs",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "genesis10",
+      "tld": "com",
+      "retributionLevel": 5
+    },
+
+    {
+      "domain": "georgiait",
+      "tld": "com",
+      "retributionLevel": 5
+    }
+  ]
+}

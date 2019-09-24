@@ -4,6 +4,62 @@
     "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarma\\SpamKarma.csproj": {}
   },
   "projects": {
+    "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarmaBase\\SpamKarmaBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarmaBase\\SpamKarmaBase.csproj",
+        "projectName": "SpamKarmaBase",
+        "projectPath": "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarmaBase\\SpamKarmaBase.csproj",
+        "packagesPath": "C:\\Users\\akclark\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarmaBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\akclark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarma\\SpamKarma.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +85,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarmaBase\\SpamKarmaBase.csproj": {
+                "projectPath": "C:\\Users\\akclark\\source\\repos\\SpamKarma\\SpamKarmaBase\\SpamKarmaBase.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -45,14 +105,22 @@
               "target": "Package",
               "version": "[2.1.4, )"
             },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NETCore.App": {
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.1.12, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "System.ServiceProcess.ServiceController": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             }
           },
           "imports": [
@@ -60,6 +128,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true
+        }
+      },
+      "runtimes": {
+        "win7-x64": {
+          "#import": []
         }
       }
     }

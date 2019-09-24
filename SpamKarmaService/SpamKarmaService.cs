@@ -1,14 +1,19 @@
-﻿using System;
+﻿using SpamKarmaBase;
+using System;
 using System.IO;
+using System.ServiceProcess;
 using Newtonsoft.Json;
-using SpamKarmaBase;
 
-namespace SpamKarma
+namespace SpamKarmaService
 {
-
-    internal class Program
+    public partial class SpamKarmaService : ServiceBase
     {
-        private static void Main(string[] args)
+        public SpamKarmaService()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnStart(string[] args)
         {
             var vm = new Victim();
             BlackList bl;
@@ -26,8 +31,9 @@ namespace SpamKarma
             }
         }
 
-       
-
-
+        protected override void OnStop()
+        {
+            Console.WriteLine("SpamKarma Service Stopped");
+        }
     }
 }
